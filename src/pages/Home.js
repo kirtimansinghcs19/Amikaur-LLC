@@ -152,6 +152,7 @@ const Home = () => {
           ))}
         </Box>
       </Box>
+
       <SmallContainer />
       <VisionValues />
       <CircularGrid />
