@@ -7,6 +7,7 @@ import Header from "./pages/components/header";
 import ItemDetail from "./pages/ItemDetail";
 import BottomNavBar from "./pages/components/Bottomnavbar";
 import { useEffect } from "react";
+import NotFound from "./pages/NotFound";
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/job/:id" element={<ItemDetail />} />
+            {/* 404 Not Found route */}
+            <Route path="*" element={<NotFound />} />{" "}
+            {/* Catch-all route for unknown paths */}
           </Routes>
           <BottomNavBar />
         </div>
