@@ -30,7 +30,18 @@ const SmallContainer = () => {
       }}
     >
       {/* Header with multiple colors */}
-      <MultiColorHeader>Amikaur LLC PURPOSE</MultiColorHeader>
+      <Typography
+        style={{
+          color: "#092E20",
+          fontSize: "48px",
+          fontWeight: "bold",
+          fontStyle: "italic",
+          textAlign: "center",
+          padding: "10px 0",
+        }}
+      >
+        Amikaur LLC PURPOSE
+      </Typography>
 
       {/* Body content */}
       <Box

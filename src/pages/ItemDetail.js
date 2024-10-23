@@ -58,7 +58,7 @@ const ItemDetail = () => {
               sx={{
                 width: "100%", // Full width of the screen
                 height: { xs: "300px", md: "500px" }, // Fixed height for different screen sizes
-                objectFit: "initial", // Ensures the image covers the whole area
+                objectFit: "cover", // Ensures the image covers the whole area
                 display: "block",
               }}
             />

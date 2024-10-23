@@ -71,7 +71,7 @@ const BottomNavBar = () => {
         color="white"
         sx={{ textAlign: "center", fontSize: "0.80rem" }}
       >
-        © Amikaur LLC Technologies Pvt. Ltd.
+        © Amikaur LLC.
       </Typography>
     </Box>
   );
