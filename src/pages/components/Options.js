@@ -3,7 +3,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { JobData } from "../../constants";
-import backgroundImage from "../../icons/itemdetail_background.png"; // Adjust the path to your image
+import backgroundImage from "../../icons/itemdetail_background.webp"; // Adjust the path to your image
 
 const CircularBox = styled(Box)(({ bgImage }) => ({
   backgroundImage: `url(${bgImage})`,

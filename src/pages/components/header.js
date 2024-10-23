@@ -19,7 +19,7 @@ import ContactMailIcon from "@mui/icons-material/ContactMail";
 import { Link } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
-import logo from "../../icons/company_logo_wothout_text.jpg"; // Import your logo here
+import logo from "../../icons/company_logo_wothout_text.webp"; // Import your logo here
 
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);

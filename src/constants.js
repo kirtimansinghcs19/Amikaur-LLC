@@ -1,6 +1,6 @@
-import background_1 from "./icons/background_1.jpg";
-import background_2 from "./icons/background_2.jpg";
-import background_3 from "./icons/background_3.jpg";
+import background_1 from "./icons/background_1.webp";
+import background_2 from "./icons/background_2.webp";
+import background_3 from "./icons/background_3.webp";
 
 export const homeImages = [
   {
@@ -87,7 +87,7 @@ export const JobData = {
       "Regulatory Affairs",
       "Product Management",
     ],
-    image_link: "medical_devices.jpg",
+    image_link: "medical_devices.webp",
   },
   health_care_it: {
     title: "HEALTH CARE IT",
@@ -112,7 +112,7 @@ export const JobData = {
       "Healthcare Informatics",
       "IT Technology Management",
     ],
-    image_link: "health_care_it.jpg",
+    image_link: "health_care_it.webp",
   },
   information_technology_it: {
     title: "INFORMATION TECHNOLOGY (IT)",
@@ -140,7 +140,7 @@ export const JobData = {
       "Global Communications",
       "Business Analyst",
     ],
-    image_link: "information_technology_it.jpg",
+    image_link: "information_technology_it.webp",
   },
   engineering: {
     title: "ENGINEERING",
@@ -201,7 +201,7 @@ export const JobData = {
       "Report Analyst",
       "Financial Planning & Analysis",
     ],
-    image_link: "accounting_and_finance.jpg",
+    image_link: "accounting_and_finance.webp",
   },
   legal: {
     title: "LEGAL",
@@ -250,7 +250,7 @@ export const JobData = {
       "Paralegal (Contract Specialist)",
       "Paralegal (Patent)",
     ],
-    image_link: "legal.jpg",
+    image_link: "legal.webp",
   },
   banking: {
     title: "BANKING",
@@ -265,7 +265,7 @@ export const JobData = {
       "Asset Management Specialist",
       "Underwriters",
     ],
-    image_link: "banking.png",
+    image_link: "banking.webp",
   },
   analytics: {
     title: "ANALYTICS",
@@ -282,7 +282,7 @@ export const JobData = {
       "Market Research and Analysis",
       "Customer Support Analytics",
     ],
-    image_link: "analytics.jpg",
+    image_link: "analytics.webp",
   },
   human_resources_hr: {
     title: "HUMAN RESOURCES (HR)",
@@ -299,6 +299,6 @@ export const JobData = {
       "HR Business Partner",
       "HR Compliance Officer",
     ],
-    image_link: "human_resources_hr.jpg",
+    image_link: "human_resources_hr.webp",
   },
 };

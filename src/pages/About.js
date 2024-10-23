@@ -1,5 +1,5 @@
 import React from "react";
-import aboutBg from "../icons/about_page.jpg";
+import aboutBg from "../icons/about_page.webp";
 
 const About = () => {
   return (
