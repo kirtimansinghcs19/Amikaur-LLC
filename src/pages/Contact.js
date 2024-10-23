@@ -18,29 +18,40 @@ const ContactUs = () => {
           </Typography>
           <div className="flex items-center mb-2">
             <i className="fas fa-phone-alt mr-2 text-lg text-blue-600"></i>
-            <Typography variant="body1">(123) 456-7890</Typography>
+            <a
+              href="tel:+11234567890"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <Typography variant="body1">(123) 456-7890</Typography>
+            </a>
           </div>
           <div className="flex items-center mb-2">
             <i className="fas fa-envelope mr-2 text-lg text-blue-600"></i>
-            <Typography variant="body1">contact@yourdomain.com</Typography>
+            <a
+              href="mailto:support@amikaur.com"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <Typography variant="body1">Support@amikaur.com</Typography>
+            </a>
           </div>
           <div className="flex items-center mb-2">
             <i className="fas fa-map-marker-alt mr-2 text-lg text-blue-600"></i>
             <Typography variant="body1">
-              123 Your Street, Your City, ST 12345
+              6220 Westpark Dr Houston, TX 77057, USA
             </Typography>
           </div>
           <div className="flex items-center mb-2">
-            <i className="fab fa-facebook mr-2 text-lg text-blue-600"></i>
-            <Typography variant="body1">Facebook</Typography>
-          </div>
-          <div className="flex items-center mb-2">
-            <i className="fab fa-twitter mr-2 text-lg text-blue-600"></i>
-            <Typography variant="body1">Twitter</Typography>
-          </div>
-          <div className="flex items-center mb-2">
             <i className="fab fa-linkedin mr-2 text-lg text-blue-600"></i>
-            <Typography variant="body1">LinkedIn</Typography>
+            <Typography variant="body1">
+              <a
+                href="https://www.linkedin.com/company/amikaur-llc/posts/?feedView=all"
+                target="_blank" // Open in a new tab
+                rel="noopener noreferrer" // Recommended for security reasons
+                style={{ textDecoration: "none", color: "inherit" }} // Styling if needed
+              >
+                https://www.linkedin.com/amikaur-llc
+              </a>
+            </Typography>
           </div>
         </Paper>
       </div>

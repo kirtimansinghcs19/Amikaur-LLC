@@ -3,18 +3,23 @@ import {
   AppBar,
   Box,
   Toolbar,
-  Typography,
   IconButton,
   Drawer,
   List,
   ListItem,
   ListItemText,
   Button,
+  Avatar,
+  ListItemIcon,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import HomeIcon from "@mui/icons-material/Home";
+import InfoIcon from "@mui/icons-material/Info";
+import ContactMailIcon from "@mui/icons-material/ContactMail";
 import { Link } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
+import logo from "../../icons/company_logo_wothout_text.jpg"; // Import your logo here
 
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -33,20 +38,50 @@ const Header = () => {
 
   const list = (
     <Box
-      sx={{ width: 250 }}
+      sx={{
+        width: 250,
+        backgroundColor: "#1a1a1a", // Dark background for drawer
+        height: "100%",
+        color: "#fff", // White text color
+        transition: "all 0.3s ease", // Smooth transition effect for drawer
+      }}
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {["Home", "About", "Contact"].map((text) => (
-          <ListItem button key={text}>
+        {[
+          { text: "Home", icon: <HomeIcon /> },
+          { text: "About", icon: <InfoIcon /> },
+          { text: "Contact", icon: <ContactMailIcon /> },
+        ].map((item) => (
+          <ListItem
+            button
+            key={item.text}
+            sx={{
+              "&:hover": {
+                backgroundColor: "#333", // Darker background on hover
+                transform: "scale(1.05)", // Scale effect on hover
+                transition: "transform 0.3s ease", // Smooth hover effect
+              },
+              transition: "transform 0.2s ease", // Smooth animation
+            }}
+          >
+            <ListItemIcon sx={{ color: "#fff" }}>
+              {" "}
+              {/* Keep icon color white */}
+              {item.icon}
+            </ListItemIcon>
             <ListItemText>
               <Link
-                to={text === "Home" ? "/" : `/${text.toLowerCase()}`}
-                style={{ textDecoration: "none", color: "inherit" }}
+                to={item.text === "Home" ? "/" : `/${item.text.toLowerCase()}`}
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  transition: "color 0.3s ease", // Add smooth color transition
+                }}
               >
-                {text}
+                {item.text}
               </Link>
             </ListItemText>
           </ListItem>
@@ -60,21 +95,35 @@ const Header = () => {
       <AppBar
         position="static"
         sx={{
+          height: "90px",
           boxShadow: "none",
           padding: 0,
           margin: 0,
-          backgroundColor: "#1d2939",
+          backgroundColor: "#141C27",
         }}
       >
-        <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography
-            variant="h6"
-            component={Link} // Make the Typography a Link
-            to="/" // Redirect to home
-            sx={{ fontSize: "1.25rem", color: "white", textDecoration: "none" }}
+        <Toolbar
+          sx={{
+            justifyContent: "space-between",
+            alignItems: "center", // Vertically center the content
+            height: "100%", // Ensure the toolbar takes full height
+          }}
+        >
+          {/* Replace the company name with the logo */}
+          <Link
+            to="/"
+            style={{
+              paddingTop: "6px",
+              textDecoration: "none",
+              display: "flex",
+            }}
           >
-            Amikaur LLC
-          </Typography>
+            <Avatar
+              src={logo} // Use your logo here
+              alt="Company Logo"
+              style={{ width: "120px", height: "80px" }} // Adjust the height as needed
+            />
+          </Link>
 
           {isMobile ? (
             // Show Menu Icon on Mobile
@@ -88,12 +137,24 @@ const Header = () => {
             </IconButton>
           ) : (
             // Show buttons on larger screens
-            <Box sx={{ display: "flex", gap: 2 }}>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+              }}
+            >
               <Button
                 color="inherit"
                 component={Link}
                 to="/"
-                sx={{ fontSize: "1rem" }}
+                sx={{
+                  fontSize: "1rem",
+                  position: "relative",
+                  transition: "all 0.3s ease", // Smooth transform and color transition
+                  "&:hover": {
+                    transform: "scale(1.1)", // Scale effect on hover
+                  },
+                }}
               >
                 Home
               </Button>
@@ -101,7 +162,14 @@ const Header = () => {
                 color="inherit"
                 component={Link}
                 to="/about"
-                sx={{ fontSize: "1rem" }}
+                sx={{
+                  fontSize: "1rem",
+                  position: "relative",
+                  transition: "all 0.3s ease", // Smooth transform and color transition
+                  "&:hover": {
+                    transform: "scale(1.1)", // Scale effect on hover
+                  },
+                }}
               >
                 About
               </Button>
@@ -109,7 +177,14 @@ const Header = () => {
                 color="inherit"
                 component={Link}
                 to="/contact"
-                sx={{ fontSize: "1rem" }}
+                sx={{
+                  fontSize: "1rem",
+                  position: "relative",
+                  transition: "all 0.3s ease", // Smooth transform and color transition
+                  "&:hover": {
+                    transform: "scale(1.1)", // Scale effect on hover
+                  },
+                }}
               >
                 Contact
               </Button>
@@ -119,7 +194,17 @@ const Header = () => {
       </AppBar>
 
       {/* Drawer for mobile view */}
-      <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClose={toggleDrawer(false)}
+        PaperProps={{
+          sx: {
+            backgroundColor: "#1a1a1a", // Dark mode background for the drawer
+            color: "#fff", // Text color in the drawer
+          },
+        }}
+      >
         {list}
       </Drawer>
     </>

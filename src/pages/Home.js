@@ -35,11 +35,11 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#1d2939" }}>
       <Box
         sx={{
           width: "100%",
-          height: "500px",
+          height: "700px",
           position: "relative",
           display: "flex",
           justifyContent: "center",
@@ -90,10 +90,11 @@ const Home = () => {
             transform: "translateY(-50%)",
             color: "white",
             zIndex: 2,
-            backgroundColor: "rgba(0, 0, 0, 0.3)",
-            "&:hover": {
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-            },
+            display: "flex", // Ensure it's a flexbox
+            justifyContent: "center", // Center content horizontally
+            alignItems: "center", // Center content vertically
+            width: "48px", // Set a fixed width and height for centering
+            height: "48px",
           }}
           onClick={handlePrevImage}
         >
@@ -109,10 +110,6 @@ const Home = () => {
             transform: "translateY(-50%)",
             color: "white",
             zIndex: 2,
-            backgroundColor: "rgba(0, 0, 0, 0.3)",
-            "&:hover": {
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-            },
           }}
           onClick={handleNextImage}
         >

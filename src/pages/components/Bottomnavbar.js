@@ -7,11 +7,14 @@ import PhoneIcon from "@mui/icons-material/Phone";
 
 const BottomNavBar = () => {
   const handleMailClick = () => {
-    window.open("mailto:your-email@example.com", "_blank"); // Replace with your email
+    window.open("mailto:Support@amikaur.com", "_blank"); // Replace with your email
   };
 
   const handleLinkedinClick = () => {
-    window.open("https://linkedin.com/your-profile", "_blank"); // Replace with your LinkedIn link
+    window.open(
+      "https://www.linkedin.com/company/amikaur-llc/posts/?feedView=all",
+      "_blank"
+    ); // Replace with your LinkedIn link
   };
 
   const handlePhoneClick = () => {
@@ -22,7 +25,7 @@ const BottomNavBar = () => {
     <Box
       sx={{
         height: "100px", // Set height for the BottomNavBar
-        backgroundColor: "#1d2939", // Adjust opacity if needed
+        backgroundColor: "#141C27", // Adjust opacity if needed
         display: "flex",
         flexDirection: "column",
         padding: 1, // Add padding to prevent content overflow
@@ -47,7 +50,7 @@ const BottomNavBar = () => {
             color="white"
             sx={{ marginLeft: 1, fontSize: "0.875rem" }}
           >
-            1234 Your Address, City, Country
+            6220 Westpark Dr Houston, TX 77057, USA
           </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center" }}>

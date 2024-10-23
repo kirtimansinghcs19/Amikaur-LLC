@@ -3,7 +3,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { JobData } from "../../constants";
-import example from "../../icons/hospitals_and_health_care.webp";
+import backgroundImage from "../../icons/itemdetail_background.png"; // Adjust the path to your image
 
 const CircularBox = styled(Box)(({ bgImage }) => ({
   backgroundImage: `url(${bgImage})`,
@@ -54,9 +54,12 @@ const CircularGrid = () => {
         width: "100%",
         margin: "auto",
         padding: 2,
-        backgroundColor: "#f0f0f0",
+        backgroundColor: "",
         boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.2)",
-        borderRadius: "8px",
+        backgroundImage: `url(${backgroundImage})`, // Set the background image
+        backgroundSize: "cover", // Cover the entire box with the image
+        backgroundPosition: "center", // Center the image
+        backgroundRepeat: "no-repeat", // Prevent the image from repeating
       }}
     >
       <Grid
@@ -99,7 +102,9 @@ const CircularGrid = () => {
                 </CircularBox>
 
                 {/* Add heading just below the CircularBox */}
-                <h3 style={{ marginTop: "16px" }}>{item.title}</h3>
+                <h3 style={{ marginTop: "16px", color: "white" }}>
+                  {item.title}
+                </h3>
               </div>
             </Grid>
           );

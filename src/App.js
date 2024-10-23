@@ -6,8 +6,14 @@ import Contact from "./pages/Contact";
 import Header from "./pages/components/header";
 import ItemDetail from "./pages/ItemDetail";
 import BottomNavBar from "./pages/components/Bottomnavbar";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "Amikaur LLC"; // Set the new tab title once
+  }, []);
+  // Empty dependency array ensures this runs once, when the component is mounted
+
   return (
     <Router>
       <KaptureTheme>

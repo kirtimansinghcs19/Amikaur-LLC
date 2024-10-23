@@ -22,6 +22,7 @@ const VisionValues = () => {
           width: { xs: "100%", md: "48%" }, // Full width on small screens
           boxShadow: 1,
           display: "flex",
+          backgroundColor: "#fff",
           flexDirection: "column",
           transition: "transform 0.3s ease",
           "&:hover": {

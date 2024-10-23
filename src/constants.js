@@ -1,7 +1,10 @@
+import background_1 from "./icons/background_1.jpg";
+import background_2 from "./icons/background_2.jpg";
+import background_3 from "./icons/background_3.jpg";
+
 export const homeImages = [
   {
-    image:
-      "https://civicminds.com/wp-content/uploads/2017/01/nasa2-1500x630.jpg",
+    image: background_1,
     body: `Your trusted staffing partner based in Houston, TX, where we
             specialize in connecting talent with opportunity across a wide range
             of industries. Our mission is to bridge the gap between employers
@@ -10,8 +13,7 @@ export const homeImages = [
     title: "",
   },
   {
-    image:
-      "https://civicminds.com/wp-content/uploads/2017/01/glaxy-next-dimension-1500x630.jpg",
+    image: background_2,
     body: ` On our homepage, you’ll discover the breadth of our services,
             designed to meet the unique needs of both businesses and job
             seekers. We pride ourselves on our industry expertise and
@@ -21,8 +23,7 @@ export const homeImages = [
     title: "",
   },
   {
-    image:
-      "https://civicminds.com/wp-content/uploads/2017/01/nasa2-1500x630.jpg",
+    image: background_3,
     body: `As you explore our website, we encourage you to take action—whether
             that's contacting us for more information, browsing our job
             listings, or learning more about the tailored solutions we offer.`,
@@ -86,7 +87,7 @@ export const JobData = {
       "Regulatory Affairs",
       "Product Management",
     ],
-    image_link: "health_care_it.jpg",
+    image_link: "medical_devices.jpg",
   },
   health_care_it: {
     title: "HEALTH CARE IT",
@@ -139,7 +140,7 @@ export const JobData = {
       "Global Communications",
       "Business Analyst",
     ],
-    image_link: "engineering.webp",
+    image_link: "information_technology_it.jpg",
   },
   engineering: {
     title: "ENGINEERING",
@@ -281,7 +282,7 @@ export const JobData = {
       "Market Research and Analysis",
       "Customer Support Analytics",
     ],
-    image_link: "legal.jpg",
+    image_link: "analytics.jpg",
   },
   human_resources_hr: {
     title: "HUMAN RESOURCES (HR)",
@@ -298,6 +299,6 @@ export const JobData = {
       "HR Business Partner",
       "HR Compliance Officer",
     ],
-    image_link: "legal.jpg",
+    image_link: "human_resources_hr.jpg",
   },
 };

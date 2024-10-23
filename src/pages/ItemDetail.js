@@ -24,7 +24,14 @@ const ItemDetail = () => {
   }, [id]); // Empty dependency array to run once on mount
 
   return (
-    <Box sx={{ width: "100%", overflowX: "hidden" }}>
+    <Box
+      sx={{
+        width: "100%",
+        overflowX: "hidden",
+        backgroundColor: "#1d2939",
+        color: "white",
+      }}
+    >
       {/* Full width image with fixed height */}
       {!loading ? (
         <Box
@@ -34,7 +41,7 @@ const ItemDetail = () => {
           sx={{
             width: "100%", // Full width of the screen
             height: { xs: "300px", md: "500px" }, // Fixed height for different screen sizes
-            objectFit: "cover", // Ensures the image covers the whole area
+            objectFit: "initial", // Ensures the image covers the whole area
             display: "block",
           }}
         />
@@ -73,7 +80,7 @@ const ItemDetail = () => {
           {JobData[id] &&
             JobData[id].points.map((point, index) => (
               <li key={index} className="flex items-center">
-                <span className="h-2 w-2 bg-black rounded-full mr-2"></span>
+                <span className="h-2 w-2 bg-white rounded-full mr-2"></span>
                 {point}
               </li>
             ))}

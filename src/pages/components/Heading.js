@@ -22,9 +22,11 @@ const SmallContainer = () => {
         maxWidth: "1050px", // Maximum width for the container
         margin: "0 auto", // Center the container
         padding: 2,
+        marginTop: "40px",
         borderRadius: "8px", // Optional rounded corners
-        backgroundColor: "#fff", // Background color for the container
-        border: "none", // Ensuring there is no border
+        backgroundColor: "#D6D4D2", // Background color for the container
+        border: "2px solid #1d2939", // Dark border color (adjust as needed)
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Optional shadow for depth
       }}
     >
       {/* Header with multiple colors */}
@@ -41,8 +43,6 @@ const SmallContainer = () => {
           variant="body1"
           sx={{ fontSize: "16px", fontStyle: "italic" }}
         >
-          {" "}
-          {/* Normal paragraph size and italic */}
           At Amikaur LLC, we understand that in a competitive staffing
           landscape, it’s essential to stand out. This is why we emphasize our
           unique selling propositions that differentiate us from other staffing
