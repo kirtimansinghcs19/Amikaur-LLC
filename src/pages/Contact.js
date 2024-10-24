@@ -1,14 +1,14 @@
 import React from "react";
 import { Paper, Typography } from "@mui/material";
-import MyForm from "./components/Form";
+// import MyForm from "./components/Form";
 
 const ContactUs = () => {
   return (
     <div className="flex flex-col md:flex-row h-[83.5vh] xl:py-40 xl:px-40 bg-[#1d2939]">
       {/* Left Side: Contact Form */}
-      <div className="flex-1 flex flex-col justify-center mx-2 mb-5 md:mb-0">
+      {/* <div className="flex-1 flex flex-col justify-center mx-2 mb-5 md:mb-0">
         <MyForm />
-      </div>
+      </div> */}
 
       {/* Right Side: Contact Information */}
       <div className="flex-1 flex flex-col justify-center mx-2">
