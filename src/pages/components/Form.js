@@ -23,19 +23,42 @@ const MyForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    mobile: "",
-    roleNumber: "",
+    message: "",
   });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Use the Google Apps Script Web App URL here
+    const WEB_APP_URL =
+      "https://script.google.com/macros/s/AKfycbz3uQHZEz5DhxpgxjqlzOllVc57YfQj06jhluJpFQBUQooudIFJSKGdTWLlP4_1PkO_Mg/exec";
+
+    console.log(formData);
+    try {
+      const response = await fetch(WEB_APP_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData), // Send form data as JSON
+      });
+
+      if (response.ok) {
+        alert("Form submitted successfully!");
+      } else {
+        alert("Error submitting form");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission (e.g., send data to an API)
-    console.log(formData);
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
   return (
@@ -91,6 +114,7 @@ const MyForm = () => {
             color="primary"
             fullWidth
             sx={{ marginTop: 2 }}
+            onSubmit={handleSubmit}
           >
             Submit
           </Button>
