@@ -18,7 +18,7 @@ const BottomNavBar = () => {
   };
 
   const handlePhoneClick = () => {
-    window.open("tel:+1234567890", "_blank"); // Replace with your phone number
+    window.open("tel:281-339-1295", "_blank"); // Replace with your phone number
   };
 
   return (

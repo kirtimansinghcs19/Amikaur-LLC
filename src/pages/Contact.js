@@ -19,10 +19,19 @@ const ContactUs = () => {
           <div className="flex items-center mb-2">
             <i className="fas fa-phone-alt mr-2 text-lg text-blue-600"></i>
             <a
-              href="tel:+11234567890"
+              href="tel:281-339-1295"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              <Typography variant="body1">(123) 456-7890</Typography>
+              <Typography variant="body1">281-339-1295</Typography>
+            </a>
+          </div>
+          <div className="flex items-center mb-2">
+            <i className="fas fa-phone-alt mr-2 text-lg text-blue-600"></i>
+            <a
+              href="tel:281-666-2550"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <Typography variant="body1">281-666-2550-(Fax number)</Typography>
             </a>
           </div>
           <div className="flex items-center mb-2">
