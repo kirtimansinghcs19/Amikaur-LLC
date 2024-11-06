@@ -15,7 +15,7 @@ const CircularBox = styled(Box)(({ bgImage }) => ({
   justifyContent: "center",
   alignItems: "center",
   color: "white",
-  borderRadius: "50%",
+  borderRadius: "20%",
   position: "relative",
   boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
   overflow: "hidden",
@@ -67,6 +67,8 @@ const CircularGrid = () => {
         spacing={3}
         justifyContent="center"
         alignItems="center"
+        paddingTop="48px"
+        paddingBottom="48px"
         style={{ textAlign: "center" }}
       >
         {Object.keys(JobData).map((key) => {
@@ -74,9 +76,9 @@ const CircularGrid = () => {
           return (
             <Grid
               item
-              xs={12}
-              sm={4}
-              md={4}
+              xs={12} // For small screens, each item takes full width
+              sm={6} // For medium screens, each item takes 6/12 (half width)
+              md={3} // For large screens, each item takes 3/12 (1/4 width)
               key={key} // Use the section key as the unique key
               container
               justifyContent="center"
