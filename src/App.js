@@ -26,7 +26,6 @@ function App() {
             // Ensure the content takes at least the full height of the viewport
           }}
         >
-          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -36,7 +35,7 @@ function App() {
             <Route path="*" element={<NotFound />} />{" "}
             {/* Catch-all route for unknown paths */}
           </Routes>
-          <BottomNavBar />
+          {/* <BottomNavBar /> */}
         </div>
       </KaptureTheme>
     </Router>

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Box, CircularProgress, Container, Typography } from "@mui/material";
 import { JobData } from "../constants";
+import BottomNavBar from "./components/Bottomnavbar";
+import Header from "./components/header";
 
 const ItemDetail = () => {
   const { id } = useParams(); // Get the URL parameter
@@ -40,6 +42,8 @@ const ItemDetail = () => {
 
   return (
     <>
+      {" "}
+      <Header />
       {id in JobData && (
         <Box
           sx={{
@@ -105,6 +109,7 @@ const ItemDetail = () => {
           </Container>
         </Box>
       )}
+      <BottomNavBar />
     </>
   );
 };
