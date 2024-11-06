@@ -1,14 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./index.css";
+import "./index.css"; // Make sure to import your global styles
+
+// Wait for React to fully initialize before hiding the preloader
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Render the app
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Once React is ready, remove the loader and show the app
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  if (loader) {
+    loader.style.display = "none"; // Hide loader
+  }
+
+  const root = document.getElementById("root");
+  if (root) {
+    root.style.display = "block"; // Show React root element
+  }
+});
