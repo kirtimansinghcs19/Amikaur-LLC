@@ -13,15 +13,15 @@ root.render(
   </React.StrictMode>
 );
 
-// Once React is ready, remove the loader and show the app
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
-  if (loader) {
-    loader.style.display = "none"; // Hide loader
-  }
+// // // Once React is ready, remove the loader and show the app
+// // window.addEventListener("load", () => {
+// //   const loader = document.querySelector(".loader");
+// //   if (loader) {
+// //     loader.style.display = "none"; // Hide loader
+// //   }
 
-  const root = document.getElementById("root");
-  if (root) {
-    root.style.display = "block"; // Show React root element
-  }
-});
+// //   const root = document.getElementById("root");
+// //   if (root) {
+// //     root.style.display = "block"; // Show React root element
+// //   }
+// });
