@@ -11,8 +11,12 @@
 
 html,
 body {
-  height: 100%;
   font-family: sans-serif;
+  background-color: #1d2939;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /* overflow: hidden; */
   overscroll-behavior: none; /* Prevent bounce or stretching */
 }
 
