@@ -99,7 +99,6 @@ const VisionValues = () => {
           sx={{
             backgroundColor: "white",
             padding: 2,
-            borderRadius: "4px",
           }}
         >
           <Typography variant="">

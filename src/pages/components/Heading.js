@@ -24,7 +24,7 @@ const SmallContainer = () => {
         padding: 2,
         marginTop: "40px",
         borderRadius: "8px", // Optional rounded corners
-        backgroundColor: "#D6D4D2", // Background color for the container
+        backgroundColor: "white", // Background color for the container
         border: "2px solid #1d2939", // Dark border color (adjust as needed)
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Optional shadow for depth
       }}
