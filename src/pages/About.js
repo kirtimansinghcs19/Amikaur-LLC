@@ -67,19 +67,19 @@ const About = () => {
               <div className="w-full md:w-2/3 flex flex-col items-center text-center md:text-left z-10">
                 <h2 className="text-4xl font-bold mb-6">About Us</h2>
                 <p className="text-lg mb-4">
-                  Our Company is not just another hr services agency, we are a
+                  Our Company is not just another HR services agency, we are a
                   dedicated team of professionals passionate about connecting
                   the right talent with the right opportunities. Founded on the
                   principles of integrity and commitment, our company has grown
-                  from a small operation into a leader in the hr services industry
+                  from a small operation into a leader in the HR services industry
                   in Houston. Our mission is clear: to provide innovative
-                  hr services solutions that empower businesses and candidates
+                  HR services solutions that empower businesses and candidates
                   alike. Our team is comprised of industry experts who bring
                   years of experience and a deep understanding of the job
                   market. We are also deeply committed to our community,
                   actively engaging in initiatives that promote growth and
                   development. By choosing Amikaur LLC, you’re not just getting
-                  a hr services partner; you’re choosing a company that values
+                  a HR services partner; you’re choosing a company that values
                   relationships and strives to make a positive impact in every
                   engagement.
                 </p>

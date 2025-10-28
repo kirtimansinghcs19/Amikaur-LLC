@@ -54,9 +54,9 @@ const SmallContainer = () => {
           variant="body1"
           sx={{ fontSize: "16px", fontStyle: "italic" }}
         >
-          At Amikaur LLC, we understand that in a competitive hr services
+          At Amikaur LLC, we understand that in a competitive HR services
           landscape, it’s essential to stand out. This is why we emphasize our
-          unique selling propositions that differentiate us from other hr services
+          unique selling propositions that differentiate us from other HR services
           agencies. Our team brings a wealth of industry expertise, having
           worked across various sectors, allowing us to grasp the specific
           challenges and requirements of each field. We believe in personalized
