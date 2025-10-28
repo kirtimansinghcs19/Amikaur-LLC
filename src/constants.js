@@ -5,7 +5,7 @@ import background_3 from "./icons/background_3.webp";
 export const homeImages = [
   {
     image: background_1,
-    body: `Your trusted staffing partner based in Houston, TX, where we
+    body: `Your trusted hr services partner based in Houston, TX, where we
             specialize in connecting talent with opportunity across a wide range
             of industries. Our mission is to bridge the gap between employers
             seeking skilled professionals and individuals looking to advance
