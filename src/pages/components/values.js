@@ -52,17 +52,17 @@ const VisionValues = () => {
           }}
         >
           <Typography variant="">
-            Our vision at Amikaur LLC is to be recognized as the leading hr
-            services agency in Houston, known for our innovative approaches and
-            unwavering dedication to excellence. We aspire to create a hr
-            services ecosystem where businesses can thrive through the right
-            talent and where job seekers find fulfilling careers that align with
-            their skills and aspirations. In the coming years, we aim to expand
-            our reach into new industries, enhance our technological
-            capabilities to streamline recruitment processes, and further our
-            involvement in community initiatives. Our commitment is to build
-            successful partnerships that drive growth for both clients and
-            candidates, ultimately shaping the future of the workforce.
+            Our vision at Amikaur LLC is to be recognized as the leading
+            staffing agency in Houston, known for our innovative approaches and
+            unwavering dedication to excellence. We aspire to create a staffing
+            ecosystem where businesses can thrive through the right talent and
+            where job seekers find fulfilling careers that align with their
+            skills and aspirations. In the coming years, we aim to expand our
+            reach into new industries, enhance our technological capabilities to
+            streamline recruitment processes, and further our involvement in
+            community initiatives. Our commitment is to build successful
+            partnerships that drive growth for both clients and candidates,
+            ultimately shaping the future of the workforce.
           </Typography>
         </Box>
       </Box>
